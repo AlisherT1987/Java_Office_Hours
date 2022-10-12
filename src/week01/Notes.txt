@@ -75,6 +75,6 @@ a , b , c  ----- is c = a + b ;  is a = b + c ; is b = a+ c  : if any of these c
 Task 5
 Write a Java program that accepts two integer values between 25 to 75 and return true if there is a common digit in both numbers.
 Sample Input and Output
-Input the first number : 35
-Input the second number: 45
+Input the first number : 53
+Input the second number: 34
 Result: true
