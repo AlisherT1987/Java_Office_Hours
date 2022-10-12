@@ -13,7 +13,7 @@ Hint : using modules and division operators
         System.out.println("25/10 = " + 25/10);  // 2
         System.out.println("25%10 = " + 25%10);   // 5
 
-        int number = 702;  // declare and assign value
+        int number = 565;  // declare and assign value
         int digit1s, digit10s, digit100s;
         int remainingNumber ;
 
@@ -31,5 +31,8 @@ Hint : using modules and division operators
 
         digit100s = remainingNumber % 10;
         System.out.println("digit100s = " + digit100s);
+
+        int sum = digit1s + digit10s + digit100s;
+        System.out.println("sum = " + sum);
     }
 }
