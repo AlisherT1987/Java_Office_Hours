@@ -2,11 +2,25 @@ Office Hours Topics:
 
     - Variables
         - Primitive Type Variables Declare and Assign Values
+        Declare and Assign value to Variables
+        DataType variableName = VALUE;
+        DataType variableName1, variableName2 ;
+        variableName1 = VALUE;
+        variableName2 = VALUE;
         - Casting Examples
+        average is double data type
+         average = (firstInt+secondInt)/2;  // datatype ---> double : implicit casting is done by machine/compiler
+         average = (double)(firstInt+secondInt)/2;
+         (double)(firstInt+secondInt) ---> explicit casting is done by coder(person)
 
     - Concatenation
     - Operators
     - If Statements
+        Conditional Statements: if - else --- work with boolean results
+            if( condition) {true: do this } else {do something else}
+            condition should produce boolean result
+            Relational Operators: > , < , == , !=, >=, <=
+            Logical Operators : & , | , && , ||
 
 
 Example Tasks:
