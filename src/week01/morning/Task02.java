@@ -13,19 +13,19 @@ Hint : using modules and division operators
         System.out.println("25/10 = " + 25/10);  // 2
         System.out.println("25%10 = " + 25%10);   // 5
 
-        int number = 565;  // declare and assign value
+        int number = 702;  // declare and assign value
         int digit1s, digit10s, digit100s;
         int remainingNumber ;
 
-        digit1s = number % 10;
-        remainingNumber = number / 10;
+        digit1s = number % 10;               // get the last number by using modulus operator with number 10
+        remainingNumber = number / 10;       // how to get rid of digit(right to left) that we have found before
 
         System.out.println("digit1s = " + digit1s);      // 5
         System.out.println("remainingNumber = " + remainingNumber); // 56
 
-        digit10s = remainingNumber % 10;
+        digit10s = remainingNumber % 10;  // get the last number by using modulus operator with number 10
       //  remainingNumber = remainingNumber /10;
-        remainingNumber /= 10;
+        remainingNumber /= 10;     // shorthand operators
         System.out.println("digit10s = " + digit10s);
         System.out.println("remainingNumber = " + remainingNumber);
 
