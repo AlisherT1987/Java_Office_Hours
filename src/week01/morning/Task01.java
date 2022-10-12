@@ -11,7 +11,7 @@ variableName1 = VALUE;
 variableName2 = VALUE;
 Write a Java program that accepts two integers and then prints the sum, the difference, the product, the average, the distance (the difference between integer), the maximum (the larger of the two integers), the minimum (smaller of the two integers).
  */
-        int firstInt = 25;
+        int firstInt = 26;
         int secondInt = 5;
         int sum, difference, product, max, min;
         double average;
@@ -27,7 +27,12 @@ Write a Java program that accepts two integers and then prints the sum, the diff
         product = firstInt * secondInt;
         System.out.println("product = " + product);
 
-
+        average = (firstInt+secondInt)/2;  // datatype ---> double : implicit casting is done by machine/compiler
+                System.out.println("average = " + average);
+                // we are adding two integers and dividing by a number assign it to double variable: implicit casting
+        average = (double)(firstInt+secondInt)/2;
+        // (double)(firstInt+secondInt) ---> explicit casting is done by coder(person)
+        System.out.println("average = " + average);
 
     }
 }
