@@ -22,6 +22,9 @@ Office Hours Topics:
             Relational Operators: > , < , == , !=, >=, <=
             Logical Operators : & , | , && , ||
 
+* How to solve any Coding Task?
+        pseudo code: steps to achieve the result without actual coding language
+        coding language is just a tool
 
 Example Tasks:
 Task 1:
@@ -66,6 +69,8 @@ Input the first number : 5
 Input the second number: 10
 Input the third number : 15
 The result is: true
+
+a , b , c  ----- is c = a + b ;  is a = b + c ; is b = a+ c  : if any of these conditions is true then our result should be true , otherwise false
 
 Task 5
 Write a Java program that accepts two integer values between 25 to 75 and return true if there is a common digit in both numbers.
