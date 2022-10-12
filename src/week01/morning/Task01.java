@@ -15,6 +15,7 @@ Write a Java program that accepts two integers and then prints the sum, the diff
         int secondInt = 5;
         int sum, difference, product, max, min;
         double average;
+        int averageInt;
 
         // arithmetic operators
         sum = firstInt + secondInt;
@@ -30,9 +31,11 @@ Write a Java program that accepts two integers and then prints the sum, the diff
         average = (firstInt+secondInt)/2;  // datatype ---> double : implicit casting is done by machine/compiler
                 System.out.println("average = " + average);
                 // we are adding two integers and dividing by a number assign it to double variable: implicit casting
-        average = (double)(firstInt+secondInt)/2;
+        average = (double)(firstInt+secondInt)/2;   // kind of optional
         // (double)(firstInt+secondInt) ---> explicit casting is done by coder(person)
         System.out.println("average = " + average);
+
+        averageInt =(int)average; // bigger data type is trying to fit into smaller data type, mandatory explicit casting
 
     }
 }
