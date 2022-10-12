@@ -19,5 +19,15 @@ Write a Java program that accepts two integers and then prints the sum, the diff
         // arithmetic operators
         sum = firstInt + secondInt;
         System.out.println("sum = " + sum);
+
+        difference = firstInt - secondInt;
+        // shortcut for printing variables : soutv
+        System.out.println("difference = " + difference);
+
+        product = firstInt * secondInt;
+        System.out.println("product = " + product);
+
+
+
     }
 }
