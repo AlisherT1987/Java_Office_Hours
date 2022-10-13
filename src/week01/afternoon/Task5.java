@@ -13,7 +13,7 @@ Result: true
 
     public static void main(String[] args) {
 
-        int first = 53;
+        int first = 89;
         int second = 34;
 
 
