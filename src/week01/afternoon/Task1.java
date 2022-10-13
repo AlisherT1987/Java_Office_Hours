@@ -45,6 +45,22 @@ public class Task1 {
 //double avg=sum/2 ;        // also we can use that way
         System.out.println("avg = " + avg);
 //float f=100; // implicit casting small data type to bigger one
+        System.out.println("=======max-min============");
+        int max,min;
+
+
+        if (num1>num2){
+            max=num1;
+            min=num2;
+        }else {
+            max=num2;
+            min=num1;
+
+        }
+        System.out.println("max = " + max);
+        System.out.println("min = " + min);
+
+
     }
 
 
