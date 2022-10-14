@@ -1,4 +1,4 @@
-package week01.afternoon;
+package week01.evening;
 
 public class Task4 {
 
