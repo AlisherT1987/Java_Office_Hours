@@ -19,7 +19,7 @@ public class Task03 {
         // to have user input
         Scanner input = new Scanner(System.in);  // creating a scanner object
 
-        int age, weight;
+        int age, weight;  // Declare
       //  age = 20; // hard coded way
       //  weight = 40;
         age = input.nextInt();
