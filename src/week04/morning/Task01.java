@@ -1,5 +1,7 @@
 package week04.morning;
 
+import java.util.Scanner;
+
 public class Task01 {
     public static void main(String[] args) {
      /*
@@ -18,8 +20,15 @@ public class Task01 {
 			30 :  CodilityTestCoders
       */
 
+        Scanner scanner = new Scanner(System.in);
+        // prompt the user to put integer value
+        System.out.println("Please enter a positive integer number: ");
+        int userInput = scanner.nextInt(); // scanner object with the help nextInt method picks up the value and that value is used for variable userInput
+
+
         // First Way : this is a long solution and does not use concatenation
-        int N1 = 30;
+        //int N1 = 30;  // Hard coded way
+        int N1 = userInput;
         String result1 = ""; // empty bucket that will hold whatever comes out of our logic
         if(N1%2 == 0 && N1%3 == 0 && N1%5==0){   // checking if number is divisible by 2,3,5
             result1 += "CodilityTestCoders";
@@ -43,7 +52,7 @@ public class Task01 {
 
 
         // Second and shorter way using concatenation : Multiple ifs without else
-        int N2 = 30;
+        int N2 = userInput;
         String result2 = "";
      if(N2%2==0 || N2%3==0 || N2%5==0) {   // Nested IF conditions
 
