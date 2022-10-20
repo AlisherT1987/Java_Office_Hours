@@ -1,0 +1,103 @@
+Review Questions
+
+1- What do you know about pre and post increment/decrement?
+int a=5;
+System.out.println(++a);//if pre increment first increment and do your job //6
+System.out.println(a); //6
+int b=6;
+System.out.println(b++); //first do your job (print it which is 6) then increment
+System.out.println(b); //7
+
+
+2- What is the difference between & and && ?
+
+first_condition & second_condition (compiler will check all of them)
+first_condition && second_condition
+(if the first condition is false compiler will not look at the second one )
+(if the first condition is true compiler will look at the second one also)
+
+Topics:
+ 
+  * Nested If (pre condition)
+  * Ternaries
+  * Switch Statement
+  * Scanner
+
+
+  =======================================
+  Nested If
+
+   - Pre-condition
+
+   if(condition){ //pre condition for second if statement
+
+    if(condition){
+
+   
+    }
+
+   }
+
+  =======================================
+   Ternaries
+
+   Ternaries: shortcut of if statement
+if:        (Condition)?
+else:                 :
+else if:   :(Condition)?
+
+
+
+Scanner
+
+Scanner Class: used for getting user inputs
+
+in order to use it: 
+
+Needs to create an object from Scnanner
+
+Syntax: 
+Scanner referenceName = new Scanner(System.in);
+
+Scanner methods:
+
+	* nextInt() :in order to get int value from user as input
+	* nextDouble() :in order to get double value from user as input
+	* nextBoolean() :in order to get boolean value from user as input
+	* next() :in order to get String value (only one word) from user as input
+	* nextLine() :in order to get String value (with spaces) from user as input
+
+
+
+***** if we are using nextLine() method after the other methods of scanner, we MUST provide one addition nextLine()
+========================================
+Switch Statement
+
+Switch Statement: switch, case, default, break
+
+syntax:
+
+switch(Data){
+       case data1:
+
+        Statements;
+        break;
+
+       case data2:
+
+       Statements;
+       break;
+
+       default:
+
+       Statements;
+       break;
+}
+
+
+- Case value MUST match with switch' data type and UNIQUE
+- Switch' Data can not be long, float, double and boolean data types
+- break: used for exiting the switch.
+  ** if we don't give the break statement, switch statement continue to execute the next block(s) until the break statement
+
+- default block gets executed if none of the case blocks matched. there can only be ONE DEFAULT block
