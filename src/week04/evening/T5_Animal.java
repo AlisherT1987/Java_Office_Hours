@@ -20,5 +20,23 @@ Create  a program that accepts animal as String
 
     public static void main(String[] args) {
 
+        String animal = "cat";
+
+        switch (animal) { //java is case sensetive language
+                          //in switch we are looking exact matching
+            case "DOG":
+            case "CAT":
+                System.out.println(animal + " is domestic animal");
+                break;
+            case "TIGER":
+                System.out.println(animal + " is a wild animal");
+                break;
+            default:
+                System.out.println(animal + "is not known");
+                break;
+
+        }
+
+
     }
 }
