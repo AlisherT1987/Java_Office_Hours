@@ -65,12 +65,6 @@ Create  a program that accepts animal as String
 							INPUT : DOG 		EXPECTED OUTPUT : DOG is domestic animal
 
 
-Task 6 :
- 
- Create a class which is "Calculator" and add functions which are add, substract, divide and multiply.
- (Use switch case) 
-
-
 
 
 
