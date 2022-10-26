@@ -37,3 +37,7 @@ last index : str.length-1  and assign it to 0 index
 output : true  -- palindrome
 input: "hello"
 output: false  --- reversed word= olleh
+
+
+Mutation: changing
+Strings are immutable
