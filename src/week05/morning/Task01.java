@@ -29,7 +29,7 @@ public class Task01 {
         }else if(str.substring(1,5).equals("good")){
             System.out.println(true);
         }else{
-            System.out.println("The word is not valid, does not include good");
+            System.out.println("The word is not valid!");
         }
 
 
