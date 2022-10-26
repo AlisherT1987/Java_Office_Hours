@@ -4,7 +4,7 @@ public class Task04DynamicSubstring {
     public static void main(String[] args) {
         String webSearchResult = "result count: 96757512345 ";
         /*
-        result count:12345   index of ":" is 12  --- substring(12)
+        result count:12345   index of ":" is 12  --- substring(13)
 
         return type of indexOf method : int
         indexOf method takes as string parameter

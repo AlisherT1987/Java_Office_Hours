@@ -22,7 +22,7 @@ Follow up Task02;  if a substring of length two appears at both its beginning an
 The given strings is: educated
 The new string is: ucated
 
-Task04
+Task04   (Reminder for Future Office Hours: with looping and checking if it is number or alphabetic chars, in real life we would use split() method -- requires Array knowledge)
 Dynamically locate the column (:) in the given result String, then just print out the numbers from the given result String using substring method. Your solution should be capable enough to work for different size of numbers or location of (:)
 input1:  String result = "result count:12345";
 output1:  12345
@@ -32,6 +32,8 @@ output1:  3007
 Task05
 Reverse a given String of length 5, and if original and reversed strings are same print true
 input: "madam" --------reversed word=madam
-output : true
+
+last index : str.length-1  and assign it to 0 index
+output : true  -- palindrome
 input: "hello"
 output: false  --- reversed word= olleh
