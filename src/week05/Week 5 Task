@@ -1,0 +1,31 @@
+
+
+Task01:
+Write a Java program to read a string and return true if "good" appears starting at index 0 or 1 in the given string.
+input: goodinstructor --> true
+input: agoodguy --> true
+input: nogoodguy  --> false
+
+Task02:
+Write a Java program to check whether the first two characters present at the end of a given string.
+The given strings is: educated
+The first two characters appear in the last is: true
+
+Task03
+Follow up Task02;  if a substring of length two appears at both its beginning and end, return a string without the substring at the beginning otherwise, return the original string unchanged.
+The given strings is: educated
+The new string is: ucated
+
+Task04
+Dynamically locate the column (:) in the given result String, then just print out the numbers from the given result String using substring method. Your solution should be capable enough to work for different size of numbers or location of (:) 
+input1:  String result = "result count:12345";
+output1:  12345
+input1:  String result = "result count : 3007";
+output1:  3007
+
+Task05
+Reverse a given String of length 5, and if original and reversed strings are same print true
+input: "madam" --------reversed word=madam 
+output : true 
+input: "hello"
+output: false  --- reversed word= olleh
