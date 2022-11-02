@@ -3,16 +3,25 @@ week 06
 	Topics  :
 		- Methods
 
-				- Passing Arguments
+Signature:
+public static (void or return type) methodName( if parameter- dataType){
+   // statement
+}
+
+public static -- key words you will learn later
+
+
+
+				- Passing Arguments        :  pass through your main method
 				- Passing Multiple Arguments
 				- Hierarchical Method Calls
-				- Argument and Parameter Data Type Compatibility
+				- Argument and Parameter Data Type Compatibility : should be compatible
 
 		- void Methods
 		- Return Methods
 		- Debug
 
-	    - Method Overloading
+	    - Method Overloading :  same method name with different parameters
 	    - For Loop
 	    - Branching Statements
 
@@ -39,6 +48,9 @@ don't add empty to result, if not empty add it to result string
 
 
     Task 4:  Write a method that return the absolute difference between n and 21, except return double the absolute difference if n is over 21. (n is int)
+
+    method  parameter : no , or what kibd of data type --- interger
+    method return type : void? --- integer
 
 
              diff21(19) → 2
