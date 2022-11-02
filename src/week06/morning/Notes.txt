@@ -81,4 +81,9 @@ don't add empty to result, if not empty add it to result string
        String sentence="Java is a java";
        String searched="java";
 
+       // use contains to find out if sentence contains the word
+       // if it is contained use indexOf method to find ---> index of first character
+
+       method signature:  parameter or parameters (2 strings)  --- return type integer
+
    output: 0
