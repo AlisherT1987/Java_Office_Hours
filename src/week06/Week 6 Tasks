@@ -1,0 +1,63 @@
+Tasks:
+
+	Task 1 :   Write a method that can check if a number is prime or not
+
+				Note : Prime numbers are special numbers, greater than 1, that have exactly two factors, themselves and 1
+
+
+	Task 2 :   Write a method that can check if a number is Armstrong number
+
+				Note: if I have a 3-digit number then each of the digits is raised to the power of three and added to obtain a number. If the number obtained equals the original number then, we call that armstrong number.
+
+				Armstrong numbers are     === 153 370 371 407 === for 3 digits
+
+    Task 3 :    Write a method that can remove  all extra space from String , trim() is forbidden
+
+// create a loop --- taking every index one by one with charAt(i)  and compares against ' '   str.charAt(i) == ' '
+don't add empty to result, if not empty add it to result string
+
+    			 Input: "  Hello "
+        	     Output: Hello
+
+
+
+    Task 4:  Write a method that return the absolute difference between n and 21, except return double the absolute difference if n is over 21. (n is int)
+
+    method  parameter : no , or what kibd of data type --- interger
+    method return type : void? --- integer
+
+
+             diff21(19) → 2
+             diff21(10) → 11
+             diff21(23) → 4
+
+    Task 5: Write a method that return a new string where the first and last chars have been exchanged.
+
+
+             frontBack("code") → "eodc"
+             frontBack("a") → "a"
+             frontBack("ab") → "ba"
+
+
+    Task 6: Write a method that given 2 int values, return true if either of them is in the range 10..20 inclusive.
+            multiple parameter  --- takes two integers
+            return type --- boolean
+
+             in1020(12, 99) → true
+             in1020(21, 12) → true
+             in1020(8, 99) → false
+
+    Task 7: Write a method that sum two number for int or double and return the result.
+
+    Task 8: Write a method that get one sentence and word which is wanted to find as string and returns the index of first character of searched word which is found firstly if it is exist if not return -1.
+
+   input:
+       String sentence="Java is a java";
+       String searched="java";
+
+       // use contains to find out if sentence contains the word
+       // if it is contained use indexOf method to find ---> index of first character
+
+       method signature:  parameter or parameters (2 strings)  --- return type integer
+
+   output: 0

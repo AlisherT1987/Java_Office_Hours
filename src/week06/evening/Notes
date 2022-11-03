@@ -1,0 +1,34 @@
+week 06
+
+	Topics  :
+		- Methods
+	* Syntax
+		  public static void printHello() {
+
+                System.out.println("Hello");
+            }
+    * Reusable code blocks
+				- Passing Arguments
+				 public static void printHello(String name){
+                        System.out.println("Hello "+name);
+                    }
+
+				- Passing Multiple Arguments
+				 public static void sayHelloFromTo(String from ,String to){
+
+                        System.out.println("Hello " +from +" to " +to );
+
+                    }
+
+				- Hierarchical Method Calls
+
+
+				- Argument and Parameter Data Type Compatibility
+
+		- void Methods
+		- Return Methods
+		- Debug
+
+	    - Method Overloading
+	    - For Loop
+	    - Branching Statements
