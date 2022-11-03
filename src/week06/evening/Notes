@@ -31,4 +31,11 @@ week 06
 
 	    - Method Overloading
 	    - For Loop
+	     //starting point       //under which condition our loop will work       //incremnt or decrement value
+                for (int i = 1;            i <=7 ;                                             i++) {
+                    System.out.println(i);
+                }
 	    - Branching Statements
+
+	    continue: skip that current iteration
+	    break: it is using for exiting the loop
