@@ -31,4 +31,24 @@ public class ParkingMeter {
     }
 
 
+    public static void main(String[] args) {
+        ParkingMeter parkMeter1 = new ParkingMeter();
+        parkMeter1.setInfo(0,50);  // max Time is 50 minutes
+        System.out.println("parkMeter1.isExpired() = " + parkMeter1.isExpired());
+
+        System.out.println("parkMeter1.add(10) = " + parkMeter1.add(10));
+        System.out.println("parkMeter1.isExpired() = " + parkMeter1.isExpired());
+
+        System.out.println("parkMeter1.add(25) = " + parkMeter1.add(25));
+        System.out.println("parkMeter1.timeLeft = " + parkMeter1.timeLeft);
+        System.out.println("parkMeter1.add(25) = " + parkMeter1.add(25));
+        System.out.println("parkMeter1.timeLeft = " + parkMeter1.timeLeft);
+        
+        while (!parkMeter1.isExpired()){
+            parkMeter1.tick();
+            System.out.println("parkMeter1.timeLeft = " + parkMeter1.timeLeft);
+        }
+    }
+
+
 }
