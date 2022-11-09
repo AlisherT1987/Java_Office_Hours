@@ -46,3 +46,11 @@ myCal.plus();
 returns:2
 myCal.minus();
 returns:0
+
+Task-3
+Write a class named ParkingMeter containing:
+Two instance variables named timeLeft and maxTime of type int.
+A setInfo method accepting values for instance variables
+A method named add that accepts an integer parameter. If the value of the parameter is equal to 25 (quarter), the value of timeLeft is increased by 30; otherwise, no increase is performed. Furthermore, the increase occurs up to maxTime only and the value of timeLeft will not exceed the value of maxTime set. add returns a boolean value: true if timeLeft was increased, false otherwise.
+A method named tick that accepts no parameters and returns no value. tick decreases the value of timeLeft by 1, but only if the value of timeLeft is greater than 0.
+A method named isExpired that accepts no parameters. isExpired returns a boolean value: true if the value of timeLeft is equal to 0; false otherwise.

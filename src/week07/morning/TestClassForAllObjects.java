@@ -37,6 +37,9 @@ public class TestClassForAllObjects {
         calculator2.setInfo(10,20);
         System.out.println(calculator2.add());//30
 
-
+        String str = new String("Java is cool");
+        System.out.println("str.length() = " + str.length());
+        System.out.println("str.charAt(0) = " + str.charAt(0));
+        System.out.println("calculator2.multiply() = " + calculator2.multiply());
     }
 }
