@@ -31,3 +31,11 @@ System.out.println(a.toString());
 name: table color: brown amount: 1
 Create the required attributes and method inside the HouseItems class
 
+Task-2
+version 1: without instance variables and no setInfo method
+Create a "MyCalculator" class that has instance methods which can do simple math operations on two numbers. The methods are: plus, minus, multiply and divide.
+All the methods get two ints then the method does the required math operation and returns the result as an int.
+
+In version one we just have instance methods with parameters (actions) no attributes of the class
+
+

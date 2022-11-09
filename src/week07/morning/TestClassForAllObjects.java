@@ -3,6 +3,7 @@ package week07.morning;
 public class TestClassForAllObjects {
     public static void main(String[] args) {
 
+        // HouseItems Class
         HouseItems item1 = new HouseItems();
         item1.name="chair";
         item1.color="beige";
@@ -16,8 +17,18 @@ public class TestClassForAllObjects {
         item2.amount=1;
 
         HouseItems item3 = new HouseItems();
-        item3.setInfo("couch","dark blue",1);
+        item3.setInfo("couch","dark blue",1, 950.50);
         System.out.println(item3);
+
+        // MyCalculator1 Class
+        MyCalculator1 calculator1 = new MyCalculator1();
+        System.out.println(calculator1.add(5,3));
+        System.out.println(calculator1.subtract(5,3));
+        System.out.println(calculator1.multiply(5,3));
+        System.out.println(calculator1.divide(5,3));
+
+
+
 
     }
 }
