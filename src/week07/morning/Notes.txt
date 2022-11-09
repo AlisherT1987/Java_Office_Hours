@@ -1,0 +1,33 @@
+Class and Objects
+
+
+Custom Methods - re-usability
+
+Class: Blueprint
+Student Class : Batch Number, Location (state), Course, Name, LastName - attributes of a an Example Student
+                Actions : Study certain amount of hour  -- 5, 2 hours
+Objects of Student class: Hamid Alakbarov, SDET, OH, B28 ---- studies 7 hours
+
+Re-usability, maintainability
+
+We have some default values for DataTypes:
+String -- null;
+int -- 0;
+double -- 0.0;
+boolean -- false;
+
+PIQ: Popular Interview Question
+This Keyword: when to use
+When your any method in blueprint class parameter name is same with your blueprint class instance variable name
+
+Task-1
+The class HouseItems holds a few attributes and has a method called toString. The attributes are name and color -both are strings and amount which is an int. toString returns a string showing all the Atts in a format.
+for example:
+HouseItems a = new HouseItems();
+a.name = "table";
+a.color = "brown";
+a.amount = 1;
+System.out.println(a.toString());
+name: table color: brown amount: 1
+Create the required attributes and method inside the HouseItems class
+
