@@ -27,7 +27,15 @@ public class TestClassForAllObjects {
         System.out.println(calculator1.multiply(5,3));
         System.out.println(calculator1.divide(5,3));
 
-
+        // MyCalculator2 Class
+        MyCalculator2 calculator2 = new MyCalculator2();
+        calculator2.setInfo(5,3);
+        System.out.println(calculator2.add());
+        System.out.println(calculator2.subtract());
+        System.out.println(calculator2.multiply());
+        System.out.println(calculator2.divide());
+        calculator2.setInfo(10,20);
+        System.out.println(calculator2.add());//30
 
 
     }
