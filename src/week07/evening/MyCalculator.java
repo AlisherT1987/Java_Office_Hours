@@ -33,8 +33,9 @@ In version one we just have instance methods with parameters (actions) no attrib
             return ((double) num1 / num2);
         } else {
             System.err.println(num2 + "can not be  0 ");
+
         }
-        return 0;
+        return -1;
     }
 
 }
