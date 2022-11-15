@@ -1,0 +1,13 @@
+QA Theory Questions
+Manual Testing
+
+Arrays are Data Structures:
+multiple elements, fixed size, primitives, objects
+
+Is Array an Object? Yes
+
+Multidimensional Arrays  :  Array holding Array Objects
+
+n dimensional array : this holds n-1 array objects in it
+2 dimensional array : inside 1 dimension arrays
+3 dimensional array : inside 2 dimension arrays
