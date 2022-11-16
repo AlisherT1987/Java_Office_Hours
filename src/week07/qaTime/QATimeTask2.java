@@ -11,6 +11,7 @@ public class QATimeTask2 {
         };
 
         String[] smallItems =  {"Apple", "Banana", "Grape", "Avocado"};
+
         String[][] items2 = {   // holding 1 dimensional array objects
                 {"Apple2", "Banana2", "Grape", "Avocado"},  // String objects
                 {"Paper Towels", "Toilet Papers2", "Tissues", "Diapers"},

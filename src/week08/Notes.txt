@@ -1,0 +1,6 @@
+Arrays are fixed.
+Stores same type of data
+you can store primitives and also objects inside
+
+
+Arrays Class is a special utility class that has some useful methods that can be used with array (data structures)
