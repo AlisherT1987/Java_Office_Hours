@@ -42,7 +42,10 @@ public class ArraysReview {
         String[][] groupsOfData = { // String[]  data type is 1 dimensional String array
                 cities, // 1 dimensional String array
                 countries, // 1 dimensional String array
+                cities
         };
+
+      //  groupsOfData[2] = cities;
 
         String[][][] moreGroupsOfData = { // data type is 2D  String[][] array
                 groupsOfData
