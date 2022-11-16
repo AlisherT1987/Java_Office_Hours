@@ -1,4 +1,4 @@
-package week08;
+package week08.morning;
 
 public class Task03 {
     /*
