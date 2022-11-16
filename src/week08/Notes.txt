@@ -4,3 +4,9 @@ you can store primitives and also objects inside
 
 
 Arrays Class is a special utility class that has some useful methods that can be used with array (data structures)
+
+Multidimensional Arrays
+
+n dimensional array contains n-1 dimensional array
+2 dimensional array contains 1 dimensional array
+3 dimensional array contains 2 dimensional array

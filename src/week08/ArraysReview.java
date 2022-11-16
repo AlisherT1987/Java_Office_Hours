@@ -36,5 +36,36 @@ public class ArraysReview {
         for (String student : students) {  // shortcut "iter"
 
         }
+        // cities = {"Istanbul","New York", "Washington","Chicago"};
+        String[] countries = {"US","TR","GER","RUS"}; // data type is String
+
+        String[][] groupsOfData = { // String[]  data type is 1 dimensional String array
+                cities, // 1 dimensional String array
+                countries, // 1 dimensional String array
+        };
+
+        String[][][] moreGroupsOfData = { // data type is 2D  String[][] array
+                groupsOfData
+        };
+        // task is to reach each element of groupsOfData
+        for (String[] eachGroupsOfData : groupsOfData) {
+            for (String datum : eachGroupsOfData) {
+                System.out.println("datum = " + datum);
+            }
+        }
+
+        // Browser Objects
+        Browser browser1 = new Browser();
+        browser1.name = "Chrome";
+        Browser browser2 = new Browser();
+        browser2.name = "Safari";
+        Browser browser3 = new Browser();
+        browser3.name = "Firefox";
+        
+        Browser[] browsers = {browser1,browser2,browser3};
+        for (Browser browser : browsers) {
+            System.out.println("browser.name = " + browser.name);
+        }
+
     }
 }
