@@ -1,0 +1,80 @@
+Topics:
+
+ -- Arrays (Intro)
+ -- Foreach Loop
+ -- Multi Dimensional Array
+
+=====================================
+
+
+Arrays:
+
+      - Special variable that can contain multiple elements
+        * Size is fixed
+        * supports primitives & non-primitives
+________________________________________
+      - Declaring array:
+
+            DataType[] variablename;
+
+________________________________________
+      - Initializing array:
+
+            If we do not know the exact data:
+                1. DataType[] variablename= new DataType[length]
+                    int[] nums = new int[5];
+
+
+            If we know the exact data:
+                2. DataType[] variablename = {data1, data2, dat3 ...}
+
+
+=========================================
+
+Arrays Utility class:
+
+            class name: Arrays
+            package: java.util
+
+        toString(array): converts the array object (single dimensional) to string, returns string
+        sort(array): sorts the array in ascending order
+
+                    ascending order: smallest to larget
+                                         0 ~ 9
+                                         -10 ~ 10
+                                         a ~ z (97)
+                                         A ~ Z (65)
+
+        equals(array1, array2): checks if two arrays are equal, returns boolean
+
+        copyOf(array, newLength): copys the elements of the array, starting from first element to given number, returns new array
+
+        copyOfRange(array, beginningIndex, endingIndex): copys the elements of the array, staring from beginning index till the ending index (ending index excluded), returns new array
+
+
+==============================================
+
+For Each Loop: a loop that's already iterated.
+                    iteration starts from index 0
+
+             pre-condition: there MUST be a data structure
+
+
+             for(DataType each : Array ){
+
+             }
+
+================================================
+
+Multi Dimensional Array : container for the arrays
+
+          *  Two dimensional array:
+
+             int[][] twoD_arr = new int[10][20];
+
+          *  Three dimensional array:
+
+             int[][][] threeD_arr = new int[10][20][30];
+
+==================================================
+
