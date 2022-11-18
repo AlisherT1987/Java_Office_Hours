@@ -17,6 +17,8 @@ public class Task04 {
         System.out.println(findMaxLengthPalindrome(str));
         String[] str2 = {"abc", "dna", "kevin", "joe", "lamp"}; // Negative test
         System.out.println(findMaxLengthPalindrome(str2));
+
+        System.out.println(isPalindrome("race car"));
     }
     public static boolean isPalindrome(String str){
         boolean flag = false;
