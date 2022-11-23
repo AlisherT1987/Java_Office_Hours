@@ -1,5 +1,6 @@
 package week09;
 
+import java.time.LocalDateTime;
 import java.util.Arrays;
 
 public class QA_Time {
@@ -81,5 +82,9 @@ Loops : iterate
             }
             System.out.print("\n");
         }
+
+        LocalDateTime ends = LocalDateTime.of(2023,5,18,11,0);
+        System.out.println(ends);
+
     }
 }

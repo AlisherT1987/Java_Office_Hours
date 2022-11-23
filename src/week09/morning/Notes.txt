@@ -1,0 +1,6 @@
+Arrays practice: 2 Tasks
+length atc.
+
+Arraylist small tasks just to understand also practice Arraylist and Collections Utility Class Methods
+add(), get(), set(), ...etc
+String: methods-substring, length() charAt()......etc
