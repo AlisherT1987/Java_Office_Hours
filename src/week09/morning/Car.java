@@ -15,6 +15,11 @@ public class Car {
         this.price = price;
         this.color = color;
     }
+    /*
+    public Car(){   ----> Constructors: speacial methods
+    }
+     */
+
 
     public String toString() {
         return "Car{" +
