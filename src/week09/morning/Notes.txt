@@ -12,3 +12,14 @@ Finding Max and Min from a list of Values
 
    Integer.MIN_VALUE = -2,147,483,648
    Integer.MAX_VALUE =  2,147,483,647
+
+   Popular JAVA Interview logic questions: (Don't use Utility Classes - they might wanna see you problem solving approach)
+   - Reverse sth (array, arraylist, string)
+   - Sort ...
+   - Find Unique
+   - Find Max or Min
+   - Duplicate of values
+
+ArrayLists are using Arrays in Java memory, for this reason ArrayList is slower compared to Arrays
+
+In ArrayList you can only store Object types: NO PRIMITIVES
