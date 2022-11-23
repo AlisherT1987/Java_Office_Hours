@@ -53,6 +53,8 @@ public class Task03 {
         
         Integer searchResultAsNumbers = Integer.valueOf(resultArr[3]);
         System.out.println("searchResultAsNumbers = " + searchResultAsNumbers);
+
+
         
     }
 }
