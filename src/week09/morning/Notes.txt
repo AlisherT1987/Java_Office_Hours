@@ -4,3 +4,11 @@ length atc.
 Arraylist small tasks just to understand also practice Arraylist and Collections Utility Class Methods
 add(), get(), set(), ...etc
 String: methods-substring, length() charAt()......etc
+
+Finding Max and Min from a list of Values
+  ****** Comparing points
+   int max = Integer.MIN_VALUE;   value 1 --- whatever comes next as comparison value will be bigger
+   initial point for my comparison
+
+   Integer.MIN_VALUE = -2,147,483,648
+   Integer.MAX_VALUE =  2,147,483,647
