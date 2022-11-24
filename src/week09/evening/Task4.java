@@ -28,10 +28,13 @@ public class Task4 {
         //remove the third element from the array list.
 
         names.remove(2);
+                                                         //0  1 2  3  4  5  6
+ArrayList<Integer> numbers=new ArrayList<>(Arrays.asList(2,3,4, 1, 9, 6, 5));
 
 
+numbers.remove(2);
 
-
+numbers.remove(new Integer(9));
 
 
 
