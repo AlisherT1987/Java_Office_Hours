@@ -57,6 +57,7 @@ public class Task4_LongestPalindrom {
         for (int i = 0; i < eachWord.length() / 2; i++) {
             //"racecar"
             /*
+            0 1 2 3 4 5 6
             r a c e c a r
             I will compare
             r with r
@@ -67,7 +68,7 @@ public class Task4_LongestPalindrom {
             //I will get one char from beginning
             char ch1 = eachWord.charAt(i);
             //I will get one char from last
-            char ch2 = eachWord.charAt(eachWord.length() - i - 1);
+            char ch2 = eachWord.charAt(eachWord.length() - 1 - i);
 
             // I will compare one by one
             if (ch1!=ch2){
