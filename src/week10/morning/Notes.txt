@@ -1,0 +1,33 @@
+As a Tester/Developer
+What are the attributes of good test automation framework?
+- Re-Usability
+- Code quality
+- Maintainability: in terms of making changes you can do it quickly and easily
+        *** You need to have Classes(Blueprint or Utility Type classes)
+        *** You change one attribute value and it changes automatically all object values
+- Readable:  codes by everyone even for First Comers to the company
+- When you are doing copy paste: make sure that you don't have errors and make sure it does not look it is copy pasted.
+
+Creating Methods: crating a function for an operation
+syntax:
+    Access-Modifiers Specifier returnType methodName( might have parameters){
+                code statements;
+    }
+Access-Modifiers: public (accessible from everywhere), protected, default, private (accessible only in the same class)
+Specifiers: static
+to call a method:
+        instance method : through object call it
+        static method : either with class name or object (bad practice)
+
+Constructors : special methods, used for instantiate/create an object
+            how to call: with new keyword
+            Every class MUST have
+            syntax:
+            Access-Modifier ClassName(parameter){
+            *** these parameters can be used to initialize your attributes
+            statements;
+            }
+
+
+
+
