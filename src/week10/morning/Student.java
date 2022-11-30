@@ -1,5 +1,7 @@
 package week10.morning;
 
+import java.time.LocalDate;
+
 public class Student {
     /*
     Class Name: Student
@@ -13,10 +15,19 @@ public class Student {
             3rd Constructor: initializes name, age ,batchNumber
                         (MUST use constructor call to set the name & age)
             instance methods: toString()
+
+            From Task 05:
+             Attributes:
+                name, gender, dateOfBirth(use LocalDate), age, studentID, batchNumber
+
+
      */
     String name;   // if you are using these attributes in the same class you can declare private
     int age;        // in the same package you can use default
     int batchNumber;
+    String gender;
+    LocalDate dateOfBirth;
+    int studentID;
 
     static String school;
 
@@ -42,16 +53,29 @@ public class Student {
        this.batchNumber = batchNumber;
     }
 
+    public Student(String name, int batchNumber, String gender, LocalDate dateOfBirth, int studentID) {
+        this.name = name;
+        age = (LocalDate.now().getYear()-dateOfBirth.getYear());
+        this.batchNumber = batchNumber;
+        this.gender = gender;
+        this.dateOfBirth = dateOfBirth;
+        this.studentID = studentID;
+    }
+
     public void someInstanceMethod(){
         this.toString();
     }
 
 
+    @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", batchNumber=" + batchNumber +
+                ", gender='" + gender + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", studentID=" + studentID +
                 '}';
     }
 
