@@ -1,0 +1,8 @@
+package week10.morning;
+
+public class TestClass {
+    public static void main(String[] args) {
+        Student student1 = new Student();  // error
+        student1.name="Hamid";
+    }
+}

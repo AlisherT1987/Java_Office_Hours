@@ -28,6 +28,15 @@ Constructors : special methods, used for instantiate/create an object
             statements;
             }
 
+instance variables: each object has its own copy, belongs to that specific object created, multiple copies of the value
+static variables : one copy of the value, all the objects share the same value
+
+PIQ: What is the difference between this keyword and this() method?
+this: a keyword, when we want to refer to object of the instance
+        it is used for calling instance variables and methods
+this() : a method to call the constructor
+
+
 
 
 
