@@ -1,0 +1,84 @@
+
+Tasks:
+
+
+Task 1 :
+
+Create a method that which is get array list as a parameter then return the numbers which are divisible by 3.
+
+input:
+
+  numbers : 2,3,4,5,6,8,9
+
+output:
+
+3,6,9
+
+
+Task 2 :
+
+Create a method that get two arraylists as a parameters the return the array which has contains all elements in it.
+
+input:
+
+first arraylist :1,2,3
+
+second arraylist :4,5,6
+
+output:
+
+1,2,3,4,5,6
+
+
+Task 3 :
+
+Create a method that get two arrays as a parameters then return the arraylist which has contains unique elements in it.
+
+first array :1,2,3,4,5
+
+second array :4,5,6
+
+output:
+
+1,2,3,4,5,6
+
+Task 4:
+
+ Class Name: Student
+
+			instance variables:
+					name, age, batchNumber
+
+			static variables :
+					school
+
+			1st constructor: initializes the name ONLY
+
+			2nd constructor: initializes name & age
+						(MUST use constructor call to set the name)
+
+			3rd Constructor: initializes name, age ,batchNumber
+						(MUST use constructor call to set the name & age)
+
+
+			instance methods: toString()
+
+
+
+Task 5 :
+
+1. create a class named Student that has the followings features:
+			Attributes:
+				name, gender, dateOfBirth(use LocalDate), age, studentID, grade
+
+			Methods:
+				sets all the attributes of the student object
+				toString(): returns the full info of student Object
+
+2. create a class which is School with main method
+
+3. create a list of student in School class inside the static block
+
+4. create a method in School class which is getting list of students as parameter the return the list of students if the name start with "A"
+
+
