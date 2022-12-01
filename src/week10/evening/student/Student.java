@@ -49,8 +49,7 @@ Task 4:
         this(name, age);
         this.batchNumber = batchNumber;
     }
-
-    public String toString() {
+     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
