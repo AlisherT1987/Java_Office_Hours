@@ -31,8 +31,6 @@ public class School {
         students.add(student3);
         System.out.println("returnStudentsA(students) = " + returnStudentsA());
 
-
-
     }
 
     public static ArrayList<Student> returnStudentsA(){
