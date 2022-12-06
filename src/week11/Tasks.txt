@@ -1,5 +1,6 @@
 This week's topics
 
+    Class vs Object and OOP Thinking n JAVA
     Instance vs Static related to following areas:
     - Variables
     - Methods
@@ -8,17 +9,52 @@ This week's topics
 
     OOP Concepts:
     - Encapsulation
-    - Inheritance
+
 
     Tasks:
-    1. Create an encapsulated class called Credentials with attributes username and password, which are already initialized with some values in the same Credentials class. Create another class Login, to set and get values of Credentials class.
-    2. Create an encapsulated class called Password with attributes "password" and "username". Create getters and setters with conditions inside them: You can only set username if it is null, you can only get username if you can provide first three characters correctly, you can only get password if it is not null and you can provide username correctly. You can only set password if you provide username correctly.
-    3. Assume the existence of a Phone class that is a super class for CameraPhone class.
-       Define a subclass, CameraPhone that contains two instance variables: an integer named imageSize, representing the size in megapixels (for simplicity assume a pixel takes up one byte-- thus megapixels equals megabytes) of each picture (i.e., 2 means each image is composed of 2 megapixels), and an integer named memorySize, representing the number of gigabytes in the camera's memory (i.e., 4 means 4 Gigabytes of memory).
-       There is a constructor that accepts two integer parameters corresponding to the above two instance variables and which are used to initialize the respective instance variables.
-       There is also a method named numPictures that returns (as an integer) the number of pictures the camera's memory can hold. Don't forget that a gigabyte is 1,000 megabytes.
-    4. Another Inheritance task:
-         - Create a Book class with following attributes title, type, author, price.
-         - Create child classes of Book class; AudioBook (Duration, Narrator attributes), PaperBook (pages, publisher attributes), EBook (memorySize, Pages attributes)
-         - Create methods of each child classes readBook(), listenBook(), borrowBook(), buyBook(), lendBook() to see different behaviors of child classes.
+    1.
+       Person class has following attributes:
+
+       - private String instance variables: firstName, lastName
+       - private int instance variable: age
+
+       Methods:
+       - getter and setter methods for each instance variable. try to use this. keyword
+       - toString method.No parameters and Returns(does not print! no println in the method!) person info in this format: "firstName | lastName | age"
+
+       Constructors:
+
+       1) No-Args constructor
+       -sets default values for the Person object
+       name and lastName => "undefined"
+       age => -1
+
+       2) 3-Args Constructor:
+       - accepts firstName, lastName, age parameters and assigns values to encapsulated instance variable
+       try to use this. keyword
+
+       Examples:
+
+       Person person = new Person();
+
+       System.out.println(person.getFirstName()); //"undefined"
+       System.out.println(person.getLastName()); //"undefined"
+       System.out.println(person.getAge()); // -1
+       System.out.println(person.toString()); //"undefined | undefined | -1"
+
+       person.setFirstName("John");
+       person.setLastName("Doe");
+       person.setAge(44);
+
+       System.out.println(person.toString() ); // "John | Doe | 44"
+
+       Person person = new Person("Fatima", "Lee", 22);
+
+       System.out.println(person.getFirstName()); //"Fatima"
+       System.out.println(person.getLastName()); //"Lee"
+       System.out.println(person.getAge()); // 22
+       System.out.println(person.toString()); //"Fatima | Lee | 22"
+    2. Create an encapsulated class called Credentials with attributes username and password, which are already initialized with some values in the same Credentials class. Create another class Login, to set and get values of Credentials class.
+    3. Create an encapsulated class called Password with attributes "password" and "username". Create getters and setters with conditions inside them: You can only set username if it is null, you can only get username if you can provide first three characters correctly, you can only get password if it is not null and you can provide username correctly. You can only set password if you provide username correctly.
+
 
