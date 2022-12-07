@@ -16,3 +16,7 @@ What is the difference between static block and Constructor?
 2 Information are critical for a Test Environment
 - Operating System
 - Browser Type
+
+When we have only getter for a field: that field is READ-ONLY (immutable field)
+When we have only setter for a field: that field is WRITE-ONLY
+

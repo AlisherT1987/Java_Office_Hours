@@ -10,6 +10,9 @@ public class TestCases {
         test1.os = new OS("Windows");
         System.out.println(test1);
 
+        TestEnvironment test2 = new TestEnvironment(new Browser("Firefox"), new OS("MACOS"));
+        System.out.println(test2);
+
 
     }
 }

@@ -55,7 +55,9 @@ This week's topics
        System.out.println(person.getLastName()); //"Lee"
        System.out.println(person.getAge()); // 22
        System.out.println(person.toString()); //"Fatima | Lee | 22"
+
     2. Create an encapsulated class called Credentials with attributes username and password, which are already initialized with some values in the same Credentials class. Create another class Login, to set and get values of Credentials class.
+
     3. Create an encapsulated class called Password with attributes "password" and "username". Create getters and setters with conditions inside them: You can only set username if it is null, you can only get username if you can provide first three characters correctly, you can only get password if it is not null and you can provide username correctly. You can only set password if you provide username correctly.
 
 
