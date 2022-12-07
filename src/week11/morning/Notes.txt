@@ -13,4 +13,6 @@ What is the difference between static block and Constructor?
         - to prevent invalid entries
         - you can have at both getter and setter some rules
 
-
+2 Information are critical for a Test Environment
+- Operating System
+- Browser Type
