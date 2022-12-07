@@ -1,11 +1,12 @@
 This week's topics
 
-    Class vs Object and OOP Thinking n JAVA
     Instance vs Static related to following areas:
     - Variables
     - Methods
     - Blocks
     - Initialization
+
+    Class vs Object and OOP Thinking n JAVA
 
     OOP Concepts:
     - Encapsulation
