@@ -1,0 +1,16 @@
+
+ **** 3 buddies of Initialization
+What is the difference between static block and Constructor?
+ - Both initialize fields
+ - Static block is used for static fields and constructor runs whenever we create an object, static block runs only once when class is loading
+
+
+ * we have one more initializer, and that one is Init Block: this one is runs each time we create an object, before constructor
+
+ Method Overloading: same name different parameters
+
+ Encapsulation: Data-hiding, private access modifier for fields, and public getter/setters
+        - to prevent invalid entries
+        - you can have at both getter and setter some rules
+
+
