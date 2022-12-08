@@ -8,6 +8,7 @@ public class Password {
 
     public Password(String username, String password) {
         setUsername(username);
+        setPassword(username,password);
 
     }
 //username
@@ -19,7 +20,7 @@ public class Password {
     }
 
     public void setUsername(String username) {
-        if (username==null){
+        if (this.username==null){
             this.username = username;
         }
 
@@ -34,13 +35,14 @@ public class Password {
     }
 
     public void setPassword(String username,String password) {
+        //do not forget we willl come back
         if (this.username.equals(username))
         this.password = password;
         else
             this.password=null;
     }
 
-    @Override
+
     public String toString() {
         return "username: " +username + " | password: " +password;
     }
