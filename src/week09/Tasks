@@ -1,0 +1,25 @@
+1. Write a method that accepts an array and prints the number of even numbers in the
+array.
+int[] x = {2,1,2,3,4} = > 3
+int[] y = {2,2,0} = > 3
+int[] z = {1,3,5} = > 0
+
+2.Write a method that accepts an array and print the difference between the largest and
+smallest values in the array.
+int[] x = {10,3,5,6} = > 7
+int[] y = {7,2,10,9} = > 8
+int[] z = {2,10,7,2} = > 8
+
+3. Write a Java program to create a new array list, add some colors (string) and print out the collection by iterate through all elements in a array list. 
+
+4. Write a Java program to insert an element into the array list at the first position. Then retrieve an element (at a specified index) from the array list. Then update specific array element by given element. Lastly remove the third element from the array list. 
+
+5. (Use Collections Utility Class) Search an element in a array list then sort the given array list. Copy one array list into another. Shuffle elements in a array list. Reverse elements in a array list. 
+
+6. Write a Java program to extract a portion of a array list. Then compare these two array lists. 
+
+7. Write a Java program of swap two elements in an array list. 
+
+8. Write a Java program to clone an array list to another array list. Then join these two array lists. 
+
+9. Write a Java program to empty an array list then test if array list is empty or not.  
