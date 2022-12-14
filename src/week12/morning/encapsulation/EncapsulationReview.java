@@ -1,4 +1,4 @@
-package week12.morning;
+package week12.morning.encapsulation;
 
 public class EncapsulationReview {
 
@@ -15,7 +15,7 @@ public class EncapsulationReview {
         bankAccount.setBalance(1000 + 10000);
         System.out.println(bankAccount.getBalance());
 
-
+        System.out.println(bankAccount.toString());
 
 
     }
