@@ -6,6 +6,7 @@ public class Windows extends Computer{
         super(os, memory);
     }
 
+
     public void openEdge(){
         System.out.println("Edge is opening");
     }
