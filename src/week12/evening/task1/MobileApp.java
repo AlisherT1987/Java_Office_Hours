@@ -20,7 +20,7 @@ public class MobileApp {
     }
     public void download(){
         // you are downloading Discord with 4.5
-         System.err.println("you are downloading " + name + " with " + version+ " version!!!!");
+         System.out.println("you are downloading " + name + " with " + version+ " version!!!!");
     }
 
 
