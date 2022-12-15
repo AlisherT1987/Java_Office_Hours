@@ -13,6 +13,7 @@ public class MobileApp {
     }
 
 
+
     public void useTheApp(int minutes){
         //you are using Discord for 12 minutes
         System.out.println("you are using "+ name + " for " +minutes + " minutes" );
@@ -23,5 +24,10 @@ public class MobileApp {
     }
 
 
-
+    public String toString() {
+        return "MobileApp{" +
+                "name='" + name + '\'' +
+                ", version=" + version +
+                '}';
+    }
 }
