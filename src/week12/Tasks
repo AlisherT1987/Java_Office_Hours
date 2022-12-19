@@ -1,0 +1,112 @@
+Tasks:
+
+Task 1 :
+
+ Create a class called MobileApp
+
+            instance variables:
+                name, version
+
+                add a constructor to set all the fields
+
+            instance methods:
+                useTheApp(int minutes), download()
+
+        Create the following sub classes of MobileApp:
+            1. Instagram:
+                    extra methods:
+                        postPhoto()
+            2. Discord:
+                    extra methods:
+                        chat(String name)
+
+
+
+
+Task 2 :
+
+  
+  Create a class called Computer
+
+
+
+            instance variables:
+                os, memory
+
+                add a constructor to set all the fields
+
+            instance methods:
+
+                start(), shutdown() , info()
+
+        Create the following sub classes of Computer:
+            
+            1. Mac:
+
+                    extra methods:
+                        openSiri()
+                        openSafari()
+
+            2. Asus:
+
+                    extra methods:
+                       openEdge()
+
+
+Task 3: 
+
+
+
+  Create a class called Browser
+
+
+
+            instance variables:
+                name, version
+
+                add a constructor to set all the fields
+
+            instance methods:
+
+                open(), close()
+
+        Create the following sub classes of Browser:
+            
+            1. Safari
+
+            2. Edge
+
+            3. Firefox        
+
+
+==============================================================================
+
+1- Create a project
+2- Put your gitignore file
+3- Create your repository in your own github (in future it will be organization)
+4- Get your token (for organization)
+5- Add - Commit - Push (to the repository)
+6- Add some files in remote repository
+7- Fetch - Pull - Update
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
