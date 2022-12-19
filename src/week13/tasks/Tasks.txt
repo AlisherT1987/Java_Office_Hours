@@ -1,0 +1,4 @@
+Week 13 Java Office Hours Topics:
+* Inheritance : Implement the classes of Item, OnSaleItem and TJMax, instructions are included inside each class.
+* Final Keyword: With Variables, Methods, Classes, Arrays and ArrayLists
+* Abstraction: We will use abstractionExample.png file which is included in this tasks package to create and review abstraction in Java
