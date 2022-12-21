@@ -28,7 +28,11 @@ Rules of Method Over-Riding:
 - for primitives same return type, for object same or co-variant type
 
 
-
+Final Keyword:
+specifier for variables, methods and classes
+variable-constant
+method- prevents overriding
+classes- prevents inheritance
 
 
 

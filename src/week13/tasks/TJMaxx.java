@@ -116,6 +116,14 @@ public class TJMaxx {
      * @return
      */
 
+    public OnSaleItem getItemObject(String name){
+        for (OnSaleItem onSaleItem : onSaleItems) {
+            if(onSaleItem.getName().equals(name)){
+                return onSaleItem;
+            }
+        }
+        return null;
+    }
 
     /**
      * removes the item with matching catalogNumber
