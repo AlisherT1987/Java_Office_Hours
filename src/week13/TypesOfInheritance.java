@@ -1,4 +1,4 @@
-package week13.tasks;
+package week13;
 
 public class TypesOfInheritance {
     public static void main(String[] args) {

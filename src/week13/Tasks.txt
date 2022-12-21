@@ -35,6 +35,13 @@ method- prevents overriding
 classes- prevents inheritance
 
 
+What is ABSTRACT METHOD?
+- No body
+- No implementation
+- sub-classes need to OVERRIDE
+- these methods are meant to be overriden
+
+
 
 
 
