@@ -2,6 +2,7 @@ package week13.abstraction;
 
 public abstract class Exercise {
 
+    // abstract String name; abstraction has nothing to do with Variables
     double weight;
 
     public Exercise(double weight) {
