@@ -1,12 +1,22 @@
 package week13.tasks;
 
-public class OnSaleItem {
+public class OnSaleItem extends Item{
+    /**
+     * public constructor with:
+     *
+     * @param name
+     * @param catalogNumber
+     * @param quantity
+     * @param price
+     */
+
 
     // inherits from Item Class
     /**
      * private instance variable, used for discount percentage
      */
 
+    private double discount;
 
     /**
      * public constructor for OnSaleItem
@@ -21,6 +31,13 @@ public class OnSaleItem {
      * - assigns discount
      */
 
+    public OnSaleItem(String name, int catalogNumber, int quantity, double price, double discount) {
+        super(name, catalogNumber, quantity, (price-discount*price) );
+        this.discount=discount;
+    }
+//    public OnSaleItem(){  Gives error because no matching constructor
+//        super();
+//    }
 
 
     /**

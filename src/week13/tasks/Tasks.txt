@@ -2,3 +2,20 @@ Week 13 Java Office Hours Topics:
 * Inheritance : Implement the classes of Item, OnSaleItem and TJMax, instructions are included inside each class.
 * Final Keyword: With Variables, Methods, Classes, Arrays and ArrayLists
 * Abstraction: We will use abstractionExample.png file which is included in this tasks package to create and review abstraction in Java
+
+Inheritance: builds is-A relationship
+What can be inherited?
+- all public/protected variables and methods
+- all default var and methods can be inherited only if they are in the same package
+
+What can NOT be inherited?
+- private vars and methods
+- final class
+- constructors ? we can call them
+
+No Multiple Inheritance between classes, possible with Interfaces
+
+Constructor in Inheritance:
+- parent class constructor always executes before child class constructor
+- call with super() method
+- if you have only constructor with parameters at the parent class, child class has no choice but call for that constructor

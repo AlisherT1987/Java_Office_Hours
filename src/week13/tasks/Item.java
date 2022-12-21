@@ -29,10 +29,14 @@ Item > OnSaleItem > TJMaxx
      *
      * assigns to values to instance variables
      */
+    public Item(String name, int catalogNumber, int quantity, double price) {
+        this.name = name;
+        this.catalogNumber = catalogNumber;
+        this.quantity = quantity;
+        this.price = price;
+    }
 
-
-
-    /**
+/**
      * setter for name instance variable
      * @param name
      */
