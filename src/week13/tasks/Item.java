@@ -40,7 +40,9 @@ Item > OnSaleItem > TJMaxx
      * setter for name instance variable
      * @param name
      */
-
+    public void setName(String name) {
+        this.name = name;
+    }
 
 
 
@@ -48,13 +50,24 @@ Item > OnSaleItem > TJMaxx
      * setter for private price
      * @param price
      */
-
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
 
     /**
      * getter for price
      * @return
      */
+
+    public double getPrice() {
+        return price;
+    }
+
+
+
+
+
 
 
 
@@ -64,16 +77,26 @@ Item > OnSaleItem > TJMaxx
      * @return
      */
 
+    public String getName() {
+        return name;
+    }
 
-
-
-
+    public int getCatalogNumber() {
+        return catalogNumber;
+    }
 
     /**
      * Override toString:
      * @returns Object description in this format:
      * "Regular Item{name='Item name', catalogNumber=1234, quantity=5, price=9.99}"
      */
-
-
+    @Override
+    public String toString() {
+        return "Regular Item{" +
+                "name='" + name + '\'' +
+                ", catalogNumber=" + catalogNumber +
+                ", quantity=" + quantity +
+                ", price=" + price +
+                '}';
+    }
 }

@@ -44,16 +44,18 @@ public class OnSaleItem extends Item{
      * getter for discount
      * @return
      */
+    public double getDiscount() {
+        return discount;
+    }
 
-
-
-
-    /**
+/**
      * setter for discount
      * @param discount
      */
-
-    /**
+    public void setDiscount(double discount) {
+        this.discount = discount;
+    }
+/**
      * overrides toString from Item:
      *
      * @returns Object description in this format:
@@ -61,4 +63,12 @@ public class OnSaleItem extends Item{
      *
      */
 
+    @Override
+    public String toString() {
+        return "OnSaleItem{" +
+                "discount=" + discount
+                 + "name" + super.getName()
+                + "price" + super.getPrice()
+                + "} ";
+    }
 }

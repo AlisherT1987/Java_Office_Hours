@@ -19,3 +19,18 @@ Constructor in Inheritance:
 - parent class constructor always executes before child class constructor
 - call with super() method
 - if you have only constructor with parameters at the parent class, child class has no choice but call for that constructor
+
+Rules of Method Over-Riding:
+- needs is-A relation
+- private, static, final methods can NOT be over-riden HOWEVER we can overload them
+- Same name and same parameters
+- More visible access modifiers
+- for primitives same return type, for object same or co-variant type
+
+
+
+
+
+
+
+
