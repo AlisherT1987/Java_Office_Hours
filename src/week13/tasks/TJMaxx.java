@@ -1,6 +1,7 @@
 package week13.tasks;
 
 
+import java.util.ArrayList;
 
 public class TJMaxx {
     /**
@@ -8,14 +9,18 @@ public class TJMaxx {
      * and OnSaleItem objects that represent items that sell in TJMaxx
      */
 
+    private ArrayList<Item> items;    // we has-A relationship between TJMaxx class and Item class
+    private ArrayList<OnSaleItem> onSaleItems;
+    private Item singleItem;
+
 
     /**
      * Public no-args constructor - Instantiates regularItems and onSaleItems lists
      * as new ArrayList
      */
     public TJMaxx() {
-
-
+        items = new ArrayList<>();
+        onSaleItems = new ArrayList<>();
     }
 
     /**
@@ -23,42 +28,63 @@ public class TJMaxx {
      * @param item
      */
 
+    public void addItem(Item item){
+        this.items.add(item);
+    }
 
     /**
      * adds OnSaleItem object to onSaleItems list
      * @param item
      */
-
+    public void addItemOnSale(OnSaleItem item){
+        this.onSaleItems.add(item);
+    }
 
     /**
      * getter for regularItems
      * @return
      */
-
-
-    /**
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+/**
      * getter for onSaleItems
      * @return
      */
-
-
-    /**
+    public ArrayList<OnSaleItem> getOnSaleItems() {
+        return onSaleItems;
+    }
+/**
      * return count of regularItem object
      * @return
      */
 
+    public int getCountItems(){
+    return items.size();
+    }
 
     /**
      * returns count of onSaleItems in TJ Maxx
      * @return
      */
-
+    public int getCountOnSaleItems(){
+        return onSaleItems.size();
+    }
 
     /**
      * returns the name of each item in TJ Maxx starting
      * from regular item then onSaleItems
      * @return
      */
+
+    public ArrayList<String> getAllItemNames(){
+        ArrayList<String> names = new ArrayList<>();
+        items.addAll(onSaleItems);
+        for (Item item : items) {
+            names.add(item.getName());
+        }
+        return names;
+    }
 
 
     /**
@@ -68,6 +94,19 @@ public class TJMaxx {
      * @returns 0.0 if product cannot be found with that catalognumber
      */
 
+    public double getPriceOfItem(int catalogNumber){
+        for (Item item : items) {
+            if(item.getCatalogNumber()==catalogNumber){
+                return item.getPrice();
+            }
+        }
+        for (Item item : onSaleItems) {  // each onsaleitem is an Item as well, because of inheritance
+            if(item.getCatalogNumber()==catalogNumber){
+                return item.getPrice();
+            }
+        }
+        return 0.0;
+    }
 
     /**
      * accepts a name then searches
