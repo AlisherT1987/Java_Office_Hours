@@ -29,10 +29,10 @@ Item > OnSaleItem > TJMaxx
      * @param price
      */
     public Item(String name, int catalogNumber, int quantity, double price) {
-        this.name = name;
+        setName(name);
         this.catalogNumber = catalogNumber;
         this.quantity = quantity;
-        this.price = price;
+        setPrice(price);
     }
 
     /**
