@@ -1,4 +1,4 @@
-package week13.abstraction;
+package week13.morning.abstraction;
 
 public class Swimming extends Exercise{// first concrete class has to implement abstract methods
 
