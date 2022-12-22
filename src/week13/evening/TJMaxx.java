@@ -188,6 +188,7 @@ public class TJMaxx {
 
         for (Item item : regularItems) {
             if (item.getCatalogNumber() == catalogNumber) {
+                //we neeed to get the countity and we need to decrease the number of the countity
                 int newQuantity = item.getQuantity() - 1;
                 item.setQuantity(newQuantity);
                 if (newQuantity==0){
@@ -199,7 +200,7 @@ public class TJMaxx {
 
         }
 
-        for (Item item : onSaleItems) {
+        for (OnSaleItem item : onSaleItems) {
             if (item.getCatalogNumber() == catalogNumber) {
                 int newQuantity = item.getQuantity() - 1;
                 item.setQuantity(newQuantity);

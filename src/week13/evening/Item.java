@@ -21,6 +21,22 @@ Item > OnSaleItem > TJMaxx
     private int quantity;
     private double price;
 
+
+    /**
+     * This cons for initializing fields
+     *
+     * @param name
+     * @param catalogNumber
+     * @param quantity
+     * @param price
+     */
+    public Item(String name, int catalogNumber, int quantity, double price) {
+        setName(name);
+        this.catalogNumber = catalogNumber;
+        setQuantity(quantity);
+        setPrice(price);
+    }
+
     public int getQuantity() {
         return quantity;
     }
@@ -30,21 +46,6 @@ Item > OnSaleItem > TJMaxx
     }
 
     /**
-     * This cons for initializing fields
-     * @param name
-     * @param catalogNumber
-     * @param quantity
-     * @param price
-     */
-    public Item(String name, int catalogNumber, int quantity, double price) {
-        setName(name);
-        this.catalogNumber = catalogNumber;
-        this.quantity = quantity;
-        setPrice(price);
-    }
-
-    /**
-     *
      * @param name
      */
 
@@ -52,8 +53,9 @@ Item > OnSaleItem > TJMaxx
         this.name = name;
     }
 
-/**
+    /**
      * setter for private price
+     *
      * @param price
      */
     public void setPrice(double price) {
@@ -62,6 +64,7 @@ Item > OnSaleItem > TJMaxx
 
     /**
      * getter for price
+     *
      * @return double
      */
     public double getPrice() {
@@ -70,6 +73,7 @@ Item > OnSaleItem > TJMaxx
 
     /**
      * getter for name
+     *
      * @return
      */
     public String getName() {
@@ -77,7 +81,6 @@ Item > OnSaleItem > TJMaxx
     }
 
     /**
-     *
      * @return
      */
 
@@ -87,6 +90,7 @@ Item > OnSaleItem > TJMaxx
 
     /**
      * Override toString:
+     *
      * @returns Object description in this format:
      * "Regular Item{name='Item name', catalogNumber=1234, quantity=5, price=9.99}"
      */
