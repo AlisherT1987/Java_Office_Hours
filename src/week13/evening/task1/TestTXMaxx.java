@@ -1,4 +1,4 @@
-package week13.evening;
+package week13.evening.task1;
 
 public class TestTXMaxx {
     public static void main(String[] args) {
