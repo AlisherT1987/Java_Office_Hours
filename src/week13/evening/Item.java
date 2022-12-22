@@ -68,7 +68,16 @@ Item > OnSaleItem > TJMaxx
         return name;
     }
 
-/**
+    /**
+     *
+     * @return
+     */
+
+    public int getCatalogNumber() {
+        return catalogNumber;
+    }
+
+    /**
      * Override toString:
      * @returns Object description in this format:
      * "Regular Item{name='Item name', catalogNumber=1234, quantity=5, price=9.99}"

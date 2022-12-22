@@ -1,64 +1,100 @@
 package week13.evening;
 
 
+import java.util.ArrayList;
 
 public class TJMaxx {
     /**
      * Private lists to hold regular Item objects
      * and OnSaleItem objects that represent items that sell in TJMaxx
      */
-
+    private ArrayList<Item> regularItems;
+    private ArrayList<OnSaleItem> onSaleItems;
 
     /**
      * Public no-args constructor - Instantiates regularItems and onSaleItems lists
      * as new ArrayList
      */
     public TJMaxx() {
-
+        regularItems = new ArrayList<>();
+        onSaleItems = new ArrayList<>();
 
     }
 
     /**
      * adds an item object to regularItems list
+     *
      * @param item
      */
-
+    public void addItem(Item item) {
+        this.regularItems.add(item);
+    }
 
     /**
      * adds OnSaleItem object to onSaleItems list
+     *
      * @param item
      */
-
+    public void addOnSaleTem(OnSaleItem item) {
+        this.onSaleItems.add(item);
+    }
 
     /**
      * getter for regularItems
      * @return
      */
-
+    public ArrayList<Item> getRegularItems() {
+        return regularItems;
+    }
 
     /**
      * getter for onSaleItems
      * @return
      */
-
-
-    /**
+    public ArrayList<OnSaleItem> getOnSaleItems() {
+        return onSaleItems;
+    }
+/**
      * return count of regularItem object
      * @return
      */
+public int getCountRegularItems(){
+
+    return this.regularItems.size();
+}
+
 
 
     /**
      * returns count of onSaleItems in TJ Maxx
      * @return
      */
+    public int getCountOnSaleItems(){
 
+        return this.onSaleItems.size();
+    }
 
     /**
      * returns the name of each item in TJ Maxx starting
      * from regular item then onSaleItems
      * @return
      */
+    public ArrayList<String> getItemNames(){
+        ArrayList<String> names=new ArrayList<>();
+        //get each name from regular items
+        for (Item item : regularItems) {
+            names.add(item.getName());
+        }
+        //get each name from on sale items
+        for (Item item : onSaleItems) {
+            names.add(item.getName());
+        }
+        return names;
+
+
+    }
+
+
 
 
     /**
@@ -67,6 +103,31 @@ public class TJMaxx {
      * @param catalogNumber
      * @returns 0.0 if product cannot be found with that catalognumber
      */
+
+    public double findPriceByCatalogNumber(int catalogNumber ){
+        double price=0.0;
+
+        for (Item item : regularItems) {
+            if (item.getCatalogNumber()==catalogNumber){
+
+                price=item.getPrice();
+                break;
+            }
+
+        }
+
+        for (OnSaleItem item : onSaleItems) {
+            if (item.getCatalogNumber()==catalogNumber){
+
+                price=item.getPrice();
+                break;
+            }
+
+        }
+
+        return price;
+    }
+
 
 
     /**
@@ -77,6 +138,18 @@ public class TJMaxx {
      * @return
      */
 
+    public OnSaleItem findItemByName(String name){
+        OnSaleItem foundonSaleItem=null;
+        for (OnSaleItem onSaleItem : onSaleItems) {
+            if (onSaleItem.getName().equals(name)){
+                foundonSaleItem=onSaleItem;
+                break;
+            }
+        }
+        return foundonSaleItem;
+    }
+
+
 
     /**
      * removes the item with matching catalogNumber
@@ -84,6 +157,12 @@ public class TJMaxx {
      * Does nothing if not found
      * @param catalogNumber
      */
+    public void removeItemByCatalogNumber(int catalogNumber){
+        regularItems.removeIf(item -> item.getCatalogNumber()==catalogNumber);
+        onSaleItems.removeIf(onSaleItem -> onSaleItem.getCatalogNumber()==catalogNumber);
+    }
+
+
 
 
     /**
@@ -95,5 +174,9 @@ public class TJMaxx {
      *
      * @param catalogNumber
      */
+
+
+
+
 
 }
