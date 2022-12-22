@@ -11,6 +11,9 @@ public class TJMaxx {
     private ArrayList<Item> regularItems;
     private ArrayList<OnSaleItem> onSaleItems;
 
+    private int countRegularItemCatalogNumber;
+    private int countOnSaleItemCatalogNumber;
+
     /**
      * Public no-args constructor - Instantiates regularItems and onSaleItems lists
      * as new ArrayList
@@ -41,6 +44,7 @@ public class TJMaxx {
 
     /**
      * getter for regularItems
+     *
      * @return
      */
     public ArrayList<Item> getRegularItems() {
@@ -49,27 +53,30 @@ public class TJMaxx {
 
     /**
      * getter for onSaleItems
+     *
      * @return
      */
     public ArrayList<OnSaleItem> getOnSaleItems() {
         return onSaleItems;
     }
-/**
+
+    /**
      * return count of regularItem object
+     *
      * @return
      */
-public int getCountRegularItems(){
+    public int getCountRegularItems() {
 
-    return this.regularItems.size();
-}
-
+        return this.regularItems.size();
+    }
 
 
     /**
      * returns count of onSaleItems in TJ Maxx
+     *
      * @return
      */
-    public int getCountOnSaleItems(){
+    public int getCountOnSaleItems() {
 
         return this.onSaleItems.size();
     }
@@ -77,10 +84,11 @@ public int getCountRegularItems(){
     /**
      * returns the name of each item in TJ Maxx starting
      * from regular item then onSaleItems
+     *
      * @return
      */
-    public ArrayList<String> getItemNames(){
-        ArrayList<String> names=new ArrayList<>();
+    public ArrayList<String> getItemNames() {
+        ArrayList<String> names = new ArrayList<>();
         //get each name from regular items
         for (Item item : regularItems) {
             names.add(item.getName());
@@ -95,31 +103,30 @@ public int getCountRegularItems(){
     }
 
 
-
-
     /**
      * gets catalog number and returns price for the item
      * it will search for the item both regularItems and onsaleonSaleItems
+     *
      * @param catalogNumber
      * @returns 0.0 if product cannot be found with that catalognumber
      */
 
-    public double findPriceByCatalogNumber(int catalogNumber ){
-        double price=0.0;
+    public double findPriceByCatalogNumber(int catalogNumber) {
+        double price = 0.0;
 
         for (Item item : regularItems) {
-            if (item.getCatalogNumber()==catalogNumber){
+            if (item.getCatalogNumber() == catalogNumber) {
 
-                price=item.getPrice();
+                price = item.getPrice();
                 break;
             }
 
         }
 
         for (OnSaleItem item : onSaleItems) {
-            if (item.getCatalogNumber()==catalogNumber){
+            if (item.getCatalogNumber() == catalogNumber) {
 
-                price=item.getPrice();
+                price = item.getPrice();
                 break;
             }
 
@@ -129,20 +136,20 @@ public int getCountRegularItems(){
     }
 
 
-
     /**
      * accepts a name then searches
      * amoung onSaleItems. Once it finds, the method will return
      * that OnSaleItem object
+     *
      * @param name
      * @return
      */
 
-    public OnSaleItem findItemByName(String name){
-        OnSaleItem foundonSaleItem=null;
+    public OnSaleItem findItemByName(String name) {
+        OnSaleItem foundonSaleItem = null;
         for (OnSaleItem onSaleItem : onSaleItems) {
-            if (onSaleItem.getName().equals(name)){
-                foundonSaleItem=onSaleItem;
+            if (onSaleItem.getName().equals(name)) {
+                foundonSaleItem = onSaleItem;
                 break;
             }
         }
@@ -150,33 +157,64 @@ public int getCountRegularItems(){
     }
 
 
-
     /**
      * removes the item with matching catalogNumber
      * from both regularItems and onSaleItems.
      * Does nothing if not found
+     *
      * @param catalogNumber
      */
-    public void removeItemByCatalogNumber(int catalogNumber){
-        regularItems.removeIf(item -> item.getCatalogNumber()==catalogNumber);
-        onSaleItems.removeIf(onSaleItem -> onSaleItem.getCatalogNumber()==catalogNumber);
+    public void removeItemByCatalogNumber(int catalogNumber) {
+        regularItems.removeIf(item -> item.getCatalogNumber() == catalogNumber);
+        onSaleItems.removeIf(onSaleItem -> onSaleItem.getCatalogNumber() == catalogNumber);
     }
-
-
 
 
     /**
      * - it accepts a catalog number and finds that item
      * among regularItems and onSaleItems
      * - if it finds the item:
-     *   - decrease the count of the Item by 1
-     *   - if count reaches 0 after decrementing then remove the product(call removeItem method)
+     * - decrease the count of the Item by 1
+     * - if count reaches 0 after decrementing then remove the product(call removeItem method)
      *
      * @param catalogNumber
      */
 
+    /*
 
 
+     */
+    public void reduceItemCount(int catalogNumber) {
+
+        for (Item item : regularItems) {
+            if (item.getCatalogNumber() == catalogNumber) {
+                int newQuantity = item.getQuantity() - 1;
+                item.setQuantity(newQuantity);
+                if (newQuantity==0){
+                    removeItemByCatalogNumber(catalogNumber);
+                    return;
+                }
+
+            }
+
+        }
+
+        for (Item item : onSaleItems) {
+            if (item.getCatalogNumber() == catalogNumber) {
+                int newQuantity = item.getQuantity() - 1;
+                item.setQuantity(newQuantity);
+                if (newQuantity==0){
+                    removeItemByCatalogNumber(catalogNumber);
+                    return;
+                }
+
+            }
+
+        }
+
+
+
+    }
 
 
 }
