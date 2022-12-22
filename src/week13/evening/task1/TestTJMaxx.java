@@ -1,6 +1,6 @@
 package week13.evening.task1;
 
-public class TestTXMaxx {
+public class TestTJMaxx {
     public static void main(String[] args) {
         Item item=new Item("Pencil",1,3,2.5);
         Item item1=new Item("Pen",2,3,3.5);
