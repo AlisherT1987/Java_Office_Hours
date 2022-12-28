@@ -21,7 +21,7 @@ public class TestDriver {
       executeTests(driver);
       driver.getRemoteBrowser("www.cydeo.com");
         ((FirefoxDriver)driver).specificActionOfFirefox(); // downcasting
-      driver.someMethod();
+        ((TakesScreenshot)driver).someMethod();
 
     }
 
