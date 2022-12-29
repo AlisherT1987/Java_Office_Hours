@@ -1,0 +1,88 @@
+Topics 
+
+ - Method Overriding
+
+ - Polymorphism
+
+=======================================================
+
+Tasks
+
+  Task 1:
+
+  - Create a class which is Animal
+
+   - create a method which is move()
+   - print inside it animal is moving
+
+  - Create a sub class which is Fish
+
+   - override the method
+   - print inside it fish is swimming
+
+  Create a sub class which is Cow
+
+   - override the method
+   - print inside it cow is walking
+
+  Create a sub class which is Bird
+
+   - override the method
+   - print inside it bird is flying
+
+
+=======================================================
+ Task 2:
+
+ 
+ *** Create an interface WebDriver 
+
+  - create a get(String url) abstract method inside the class 
+  - create a close() abstract method inside the class 
+  - create a quit() abstract method inside the class 
+  - create a  String getCurrentUrl() abstract method inside the class 
+
+ *** Create an interface  TakesScreenshot
+  
+  - create a getScreenshotAs() abstract method inside the class 
+
+ *** Create an interface  JavascriptExecutor
+  
+  - create a executeScript(String script) abstract method inside the class   
+
+
+ *** Create a class RemoteWebDriver which is implementing WebDriver, TakesScreenshot, JavascriptExecutor  interface
+
+  - implement the methods
+
+ *** Create a class ChromeDriver which is extending RemoteWebDriver class
+
+  - implment the methods
+
+
+ *** Create a class FirefoxDriver which is extending RemoteWebDriver class
+
+  - implment the methods
+
+ *** Create a class SafariDriver which is extending RemoteWebDriver class
+
+  - implment the methods
+
+
+ ***** Create a TestDriver class which has main metthod. Then create a driver objects. And then call the methods.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
