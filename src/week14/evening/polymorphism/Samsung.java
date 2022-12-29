@@ -10,4 +10,5 @@ public class Samsung implements PhoneInterface{
     public void hasCamera() {
 
     }
+
 }
