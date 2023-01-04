@@ -1,4 +1,4 @@
-package week15.morning;
+package week15.morning.exceptions;
 
 import java.util.Scanner;
 
