@@ -1,0 +1,21 @@
+This week's Office Hours Tasks and Topics:
+    - Give examples on:
+        * Exception handling in JAVA
+        * Checked and Unchecked exceptions
+        * Custom exception tasks
+            - create a custom exception class that will enable us to use following statement:
+            throw new InsufficientBalanceException("Transaction declined. Not enough funds :(");
+
+    - Collections Review and practice:
+        * Task: Iterate through different Collections Data Structure using:
+            - all iteration methods, and also iterator, to find a certain data exists in that collection
+
+        * Task:
+         For compiler one of the most important task is balanced brackets
+            * Create a method that will accept a String of brackets. Determine if the brackets are balanced.
+            Brackets are balanced if the closing bracket matches the opening one.
+
+            Ex: {([])} -> balanced
+                {[(])} -> not balanced
+
+            Hint: Use stack
