@@ -68,5 +68,10 @@ public class BalancedBrackets {
         System.out.println("areBracketsBalanced(\"{[])\") = " + areBracketsBalanced("{[])"));
 
         System.out.println("areBracketsBalanced(\"{}[])\") = " + areBracketsBalanced("{}[])"));
+
+        //  "{[(  }])" --- > FALSE
+        System.out.println("areBracketsBalanced(\"{[(}])\") = " + areBracketsBalanced("{[(}])"));
     }
+
+
 }
