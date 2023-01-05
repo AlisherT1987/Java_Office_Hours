@@ -19,7 +19,7 @@ public static void main(String[] args) {
 
      */
 
-    String chars="{([]))}";
+    String chars="{([))}";
   boolean result=  balanced(chars);
     System.out.println(result);
 }
@@ -44,12 +44,14 @@ public static void main(String[] args) {
                 if (stack.peek()=='('&&ch==')') {
                     stack.pop();
                 }
-                    if (stack.peek()=='['&&ch==']') {
+                   else if (stack.peek()=='['&&ch==']') {
                         stack.pop();
                     }
 
-                    if (stack.peek()=='{'&&ch=='}') {
+                    else if (stack.peek()=='{'&&ch=='}') {
                         stack.pop();
+                    }else {
+                        return false;
                     }
 
                 }
