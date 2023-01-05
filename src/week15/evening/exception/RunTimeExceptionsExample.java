@@ -1,4 +1,4 @@
-package week15.evening;
+package week15.evening.exception;
 
 import week07.evening.Employee;
 
@@ -15,11 +15,11 @@ public class RunTimeExceptionsExample {
          */
 
         try {
-            for (int i = 6; i >=0; i--) {
+            for (int i = 0; i <6; i++) {
                 System.out.println(120 / i);
             }
         } catch (ArithmeticException e) {
-          //  e.printStackTrace();
+            e.printStackTrace();
         //    System.out.println(e.getMessage());
         }
 
@@ -38,6 +38,27 @@ public class RunTimeExceptionsExample {
 
        // int number=Integer.parseInt(str.substring(4)); //if you write 4 by mistake you will get an exception
      //   System.out.println(number);
+
+        //ArrayIndexOutOfBoundsException
+        try {
+
+            //TODO I will solve that problem later
+            int [] numbers={1,2,3};
+
+            System.out.println(numbers[3]);
+        } catch (Exception e) {
+
+        }
+
+        try {
+            //StringIndexOutOfBoundsException
+            String name="ADam";
+
+            System.out.println(name.charAt(4));
+        } catch (Exception e) {
+
+        }
+
 
     }
 }
