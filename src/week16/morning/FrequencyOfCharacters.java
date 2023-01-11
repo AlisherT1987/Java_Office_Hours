@@ -40,6 +40,11 @@ Ex:
     public static void main(String[] args) {
         frequencyTest("apple");
         frequencyTestSecondApproach("apple");
+
+        String word = "apple";
+        String[] str = word.split("");
+        System.out.println("Collections.frequency(List.of(str),\"p\") = " + Collections.frequency(List.of(str), "p"));
+
     }
 
     public static void frequencyTestSecondApproach(String str){
