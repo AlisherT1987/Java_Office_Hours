@@ -1,7 +1,6 @@
 package week16.evening;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Task1 {
 
@@ -87,5 +86,11 @@ public class Task1 {
         spartan11.put("gender","Male");
         spartan11.put("phone",1234567890);
         System.out.println(spartan11);
+
+                //Spartan
+        List<Map<String,Object>> spartans=new ArrayList<>();
+        spartans.addAll(Arrays.asList(spartan2,spartan3,spartan4,spartan5,spartan6,spartan11,spartan1,spartan7,  spartan8,spartan9,spartan10));
+        System.out.println(spartans.size());
+
     }
 }
