@@ -1,0 +1,28 @@
+Task 1:
+
+ Create a Spartan map has keys :
+
+1- id
+2- name
+3- gender
+4- phone
+
+
+*** Create a list of spartan map
+
+Task 2:
+
+
+get the spartan which has id = 10
+
+
+Task 3:
+
+get the spartans has id smaller than 6
+
+
+Task 4:
+
+get the spartans which are male
+==============================
+Then Git Practice about branch rules
