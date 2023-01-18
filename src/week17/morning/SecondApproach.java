@@ -13,24 +13,23 @@ public class SecondApproach {
 
         List<Integer> list = new ArrayList<>(); // created my list in a polymorphic way
         int numberOfElements = sc.nextInt();
+        /*
+        oh but we have a bug... they enter 5 for number of elements but then thru the string you can enter as many as you want .
+         */
         sc.nextLine();
-        String listOfNumbers = sc.nextLine();
+        String listOfNumbers = sc.nextLine(); // I got numbers as a single line
 
         String[] numbersStringArray = listOfNumbers.split(" ");
-        // loop to get and store numbers inside the list
-        for (int i = 0; i < numberOfElements ; i++) {
-            System.out.println("Enter your next number");
-            list.add(sc.nextInt()); // this line will pick up user entries from console
+        for (String s : numbersStringArray) {
+            list.add(Integer.valueOf(s));
         }
 
-        // get number of queries from user
-        System.out.println("How many queries you wanna do?");
         int numberOfQueries = sc.nextInt();
         String result = "";
 
         for (int i = 0; i < numberOfQueries; i++) {
             sc.nextLine(); // this one will pick the enter action from previous sc.nextInt() call
-            System.out.println("Do you want to Insert a new element or Delete an element to a specific index");
+
             String action = sc.nextLine(); // this will take action word
             int index = sc.nextInt(); // the index of the element that the action will perform
             switch (action){
