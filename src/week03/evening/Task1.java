@@ -17,6 +17,7 @@ public class Task1 {
     Distance of two integers: 20
     Max integer: 25
     Min integer: 5
+
      */
     public static void main(String[] args) {
 
